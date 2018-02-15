@@ -2,14 +2,17 @@
 <html lang="en" ng-app="moqodTest">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="http://www.kai-solutions.com/sites/all/themes/kai/favicon.ico" type="image/vnd.microsoft.icon" />
     <title>Moqod test</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <div class="view-container">
-      <div ng-view class="view-frame">Started</div>
+    <div id="wrapper" ng-view>
+      <div class="header">
+        <img src="img/icn-kai-logo.svg" class="logo">
+      </div>
     </div>
 
-    <script src="external/angular.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

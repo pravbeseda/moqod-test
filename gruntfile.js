@@ -58,6 +58,12 @@ require('load-grunt-tasks')(grunt);
         src: 'index.html',
         dest: 'app',
       },
+      img: {
+        expand: true,
+        cwd: 'src',
+        src: 'img/*',
+        dest: 'app',
+      },
     },
     connect: {
       server: {
