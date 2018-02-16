@@ -1,20 +1,25 @@
 $site-background: white;
 $border: #c6c6c6;
 
+
 body { 
-	background: $site-background;
-    font-family: Lato,Arial,sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #212121;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
+  background: $site-background;
+  font-family: Lato,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+}
+
+a, a:active, a:hover {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
 }
 
 #wrapper {
-	width: 1440px;
-	margin-right: auto;
-    margin-left: auto;	
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;  
 }
 
 .site-header {
@@ -30,3 +35,46 @@ body {
   margin-top: 30px;
   margin-left: 248px
 }
+
+.top-menu {
+  margin: 20px 250px;
+  a {
+    width: 75px;
+    height: 21px;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.1;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #bbbbbb;
+    padding: 10px 0;
+    margin-right: 50px;
+  }
+  a.active {
+    color: #2f85a0;
+    border-bottom: solid 3px #428BCA;
+  }  
+}
+
+.filter {
+  padding: 30px 367px;
+}
+
+.content {
+  padding: 0 248px;
+}
+
+.column {
+  width: 224px;
+  .column-header {
+    height: 134px;
+  }
+  .column-content {
+    height: 339px;
+  }
+}
+
+
