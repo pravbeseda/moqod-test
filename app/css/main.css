@@ -12,10 +12,11 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
-.header {
+.site-header {
   width: 1440px;
   height: 82px;
-  background-color: white; }
+  background-color: white;
+  border-bottom: 1px solid #c6c6c6; }
 
 .logo {
   width: 115px;
