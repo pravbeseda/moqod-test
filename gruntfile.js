@@ -16,8 +16,8 @@ require('load-grunt-tasks')(grunt);
     },
     concat: {
       js: {
-        src: ['src/external/*.js', 'src/js/**/*.js'],
-        dest: 'app/js/script.js'
+        src: ['src/js/**/*.js'],
+        dest: 'app/js/moqod-test.js'
       },
     },
     uglify: {
@@ -26,7 +26,7 @@ require('load-grunt-tasks')(grunt);
       },
       distJS: {
         files: {
-          'app/js/script.min.js': ['app/js/script.js'],
+          'app/js/moqod-test.min.js': ['app/js/moqod-test.js'],
         }
       },
     },
@@ -64,6 +64,12 @@ require('load-grunt-tasks')(grunt);
         src: 'img/*',
         dest: 'app',
       },
+      js:{
+        expand: true,
+        cwd: 'src/external',
+        src: '*.js',
+        dest: 'app/js',
+      }
     },
     connect: {
       server: {

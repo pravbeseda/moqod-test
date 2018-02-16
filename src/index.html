@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="http://www.kai-solutions.com/sites/all/themes/kai/favicon.ico" type="image/vnd.microsoft.icon" />
-    <title>Moqod test</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" media="all" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <title>Moqod test</title>
   </head>
   <body>
     <div id="wrapper" ng-controller="moqodTestController">
@@ -19,53 +20,56 @@
         <a href=".">COCKPIT</a>
       </div>
       <div class="filter">
-        <input type="text" name="filter" ng-model="query">
+        <input type="text" name="filter" ng-model="query" placeholder="Geben Sie Ihren Suchbegriff ein...">
+        <img class="create-btn pointer" src="img/btn-create-item.svg">
       </div>
       <div class="content">
-        <div class="column">
+        <div id="aufgaben" class="column">
           <div class="column-header">
             AUFGABEN PROTOKOLLE
           </div>
           <div class="column-content">
-            <div class="item"  ng-repeat="item in aufgaben | filter:query">
-              <div ng-bind="item.title"></div>
-              <div><span ng-bind="item.number"></span> <span ng-bind="item.info"></span></div>
+            <div class="item" ng-repeat="item in aufgaben | filter:query">
+              <div class="title pointer" ng-bind="item.title"></div>
+              <div class="info"><span ng-bind="item.number"></span> <span ng-bind="item.info"></span></div>
             </div>
           </div>
         </div>
-        <div class="column">
+        <div id="bautickets" class="column">
           <div class="column-header">
             Bautickets
           </div>
           <div class="column-content">
             <div class="item"  ng-repeat="item in bautickets | filter:query">
-              <div ng-bind="item.title"></div>
-              <div ng-bind="item.info"></div>
+              <div class="title pointer" ng-bind="item.title"></div>
+              <div class="info" ng-bind="item.info"></div>
             </div>
           </div>
         </div>
-        <div class="column">
+        <div id="docs" class="column">
           <div class="column-header">
             DOKUMENTE
           </div>
           <div class="column-content">
             <div class="item"  ng-repeat="item in dokumente | filter:query">
-              <div ng-bind="item.file"></div>
-              <div ng-bind="item.info"></div>
+              <div class="title pointer" ng-bind="item.file"></div>
+              <div class="info" ng-bind="item.info"></div>
             </div>
           </div>
         </div>
-        <div class="column">
+        <div id="cockpit" class="column">
           <div class="column-header">
             COCKPIT
           </div>
           <div class="column-content">
-            <div class="chart"></div>
+            <div id="chart1"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="js/script.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/moqod-test.min.js"></script>
   </body>
 </html>

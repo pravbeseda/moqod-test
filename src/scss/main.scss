@@ -3,6 +3,7 @@ $border: #c6c6c6;
 
 
 body { 
+  margin: 0;
   background: $site-background;
   font-family: Lato,Arial,sans-serif;
   font-weight: 400;
@@ -22,9 +23,13 @@ a, a:active, a:hover {
   margin-left: auto;  
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .site-header {
   width: 1440px;
-  height: 82px;
+  height: 80px;
   background-color: $site-background;
   border-bottom: 1px solid $border;
 }
@@ -37,7 +42,7 @@ a, a:active, a:hover {
 }
 
 .top-menu {
-  margin: 20px 250px;
+  margin: 13px 249px;
   a {
     width: 75px;
     height: 21px;
@@ -50,8 +55,10 @@ a, a:active, a:hover {
     letter-spacing: 1.3px;
     text-align: center;
     color: #bbbbbb;
-    padding: 10px 0;
-    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 2px;
+    margin-right: 45px;
   }
   a.active {
     color: #2f85a0;
@@ -60,23 +67,108 @@ a, a:active, a:hover {
 }
 
 .filter {
-  padding: 30px 367px;
+  position: relative;
+  margin-left: 367px;
+  margin-top: 82px;
+  margin-bottom: 70px;
+  border-left: 8px solid #5aeb5c;
+  width: 698px;
+  height: 60px;
+  box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.4);
+  input {
+    margin-top: 20px;
+    margin-left: 21px;
+    border-width: 0px;
+    border: none;
+    outline: none;
+    width: 590px;
+    opacity: 0.7;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+  }
+  img.create-btn {
+    position: absolute; 
+    top: 12px; 
+    right: 28px;
+  }
 }
 
 .content {
-  padding: 0 248px;
+  padding-left: 248px;
 }
 
 .column {
   width: 224px;
+  margin-right: 16px;
   float: left;
   .column-header {
     height: 134px;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .column-content {
     height: 339px;
+    .item {
+      padding-top: 12px;
+      padding-left: 17px;
+      width: 207px;
+      height: 39px;
+      background-color: #fffefe;
+      box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.6);
+      .title {
+        height: 15px;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+      }
+      .info {
+        height: 12px;
+        font-size: 10px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #4a4a4a;
+      }
+    }
   }
+}
+
+#aufgaben .column-header {
+  background-image: url(../img/img-aufgaben.svg);
+}
+#bautickets .column-header {
+  background-image: url(../img/img-bautickets.svg);
+}
+#docs .column-header {
+  background-image: url(../img/img-docs.svg);
+}
+#cockpit .column-header {
+  background-image: url(../img/img-cockpit.svg);
 }
 
 .chart {
