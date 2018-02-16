@@ -62,4 +62,8 @@ a, a:active, a:hover {
   .column .column-content {
     height: 339px; }
 
+.chart {
+  width: 82px;
+  height: 82px; }
+
 /*# sourceMappingURL=main.css.map */
