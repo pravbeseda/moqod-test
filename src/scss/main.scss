@@ -69,8 +69,10 @@ a, a:active, a:hover {
 
 .column {
   width: 224px;
+  float: left;
   .column-header {
     height: 134px;
+    text-transform: uppercase;
   }
   .column-content {
     height: 339px;

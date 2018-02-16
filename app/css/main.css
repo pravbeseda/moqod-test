@@ -54,9 +54,11 @@ a, a:active, a:hover {
   padding: 0 248px; }
 
 .column {
-  width: 224px; }
+  width: 224px;
+  float: left; }
   .column .column-header {
-    height: 134px; }
+    height: 134px;
+    text-transform: uppercase; }
   .column .column-content {
     height: 339px; }
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <div id="wrapper" ng-view>
+    <div id="wrapper" ng-controller="moqodTestController">
       <div class="site-header">
         <img src="img/icn-kai-logo.svg" class="logo">
       </div>
@@ -19,7 +19,7 @@
         <a href=".">COCKPIT</a>
       </div>
       <div class="filter">
-        <input type="text" name="filter">
+        <input type="text" name="filter" ng-model="query">
       </div>
       <div class="content">
         <div class="column">
@@ -27,6 +27,40 @@
             AUFGABEN PROTOKOLLE
           </div>
           <div class="column-content">
+            <div class="item"  ng-repeat="item in aufgaben | filter:query">
+              <div ng-bind="item.title"></div>
+              <div><span ng-bind="item.number"></span> <span ng-bind="item.info"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-header">
+            Bautickets
+          </div>
+          <div class="column-content">
+            <div class="item"  ng-repeat="item in bautickets | filter:query">
+              <div ng-bind="item.title"></div>
+              <div ng-bind="item.info"></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-header">
+            DOKUMENTE
+          </div>
+          <div class="column-content">
+            <div class="item"  ng-repeat="item in dokumente | filter:query">
+              <div ng-bind="item.file"></div>
+              <div ng-bind="item.info"></div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-header">
+            COCKPIT
+          </div>
+          <div class="column-content">
+            
           </div>
         </div>
       </div>
