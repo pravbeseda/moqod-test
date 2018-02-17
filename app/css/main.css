@@ -134,6 +134,11 @@ a, a:active, a:hover {
         letter-spacing: normal;
         text-align: left;
         color: #4a4a4a; }
+    .column .column-content .chart {
+      width: 224px;
+      height: 255px;
+      background-color: #fffefe;
+      box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.6); }
 
 #aufgaben .column-header {
   background-image: url(../img/img-aufgaben.svg); }
