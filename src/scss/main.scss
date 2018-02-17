@@ -1,5 +1,5 @@
 $site-background: white;
-$border: #c6c6c6;
+$border: #c6c6c65c;
 $grey-text: #4a4a4a;
 
 body { 
@@ -116,7 +116,7 @@ a, a:active, a:hover {
   border-left: 8px solid #5aeb5c;
   width: 698px;
   height: 60px;
-  box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.4);
+  box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.8);
   input {
     margin-top: 22px;
     margin-left: 20px;

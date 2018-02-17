@@ -23,7 +23,7 @@ a, a:active, a:hover {
   height: 80px;
   padding: 0px 248px;
   background-color: white;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c65c;
   position: relative; }
   .site-header .logo {
     width: 115px;
@@ -97,7 +97,7 @@ a, a:active, a:hover {
   border-left: 8px solid #5aeb5c;
   width: 698px;
   height: 60px;
-  box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.4); }
+  box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.8); }
   .filter input {
     margin-top: 22px;
     margin-left: 20px;
