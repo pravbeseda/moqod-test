@@ -99,8 +99,8 @@ a, a:active, a:hover {
   height: 60px;
   box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.4); }
   .filter input {
-    margin-top: 20px;
-    margin-left: 21px;
+    margin-top: 22px;
+    margin-left: 20px;
     border-width: 0px;
     border: none;
     outline: none;
@@ -213,7 +213,8 @@ a, a:active, a:hover {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  white-space: nowrap; }
   .chart .legend .circle {
     display: inline-block;
     width: 6px;

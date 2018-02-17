@@ -118,8 +118,8 @@ a, a:active, a:hover {
   height: 60px;
   box-shadow: 0 1px 4px 0 rgba(155, 155, 155, 0.4);
   input {
-    margin-top: 20px;
-    margin-left: 21px;
+    margin-top: 22px;
+    margin-left: 20px;
     border-width: 0px;
     border: none;
     outline: none;
@@ -247,6 +247,7 @@ a, a:active, a:hover {
     letter-spacing: normal;
     text-align: left;
     color: $grey-text;
+    white-space: nowrap;
     .circle {
       display: inline-block;
       width: 6px;
