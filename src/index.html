@@ -11,6 +11,18 @@
     <div id="wrapper" ng-controller="moqodTestController">
       <div class="site-header">
         <img src="img/icn-kai-logo.svg" class="logo">
+        <div class="partname pointer">
+          Überbauung Nessleren
+          <img src="img/btn-expand.svg" class="btn_expand">
+        </div>
+        <div class="profile">
+          <div class="login pointer">
+            Philipp Griesser
+          </div>
+          <div class="settings pointer">
+            <img src="img/btn-settings.svg" class="btn-settings">
+          </div>
+        </div>
       </div>
       <div class="top-menu">
         <a class="active" href=".">DASHBOARD</a>
@@ -31,7 +43,11 @@
           <div class="column-content">
             <div class="item" ng-repeat="item in aufgaben | filter:query">
               <div class="title pointer" ng-bind="item.title"></div>
-              <div class="info"><span ng-bind="item.number"></span> <span ng-bind="item.info"></span></div>
+              <div class="info">
+                <span ng-bind="item.number"></span>
+                <span class="triangle-right"></span>
+                <span ng-bind="item.info" class="blue-first-letter"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -62,15 +78,23 @@
             COCKPIT
           </div>
           <div class="column-content">
-            <div id="chart1" class="chart"><svg id="piechart"></svg></div>
+            <div id="chart1" class="chart">
+              <div class="title">TICKETS</div>
+              <svg id="piechart"></svg>
+              <div class="legend">
+                <span class="circle" style="background: #d0021b;"></span><span class="text">Überfällig</span>
+                <span class="circle" style="background: #ff7a00;"></span><span class="text">Offen</span>
+                <span class="circle" style="background: #ffd600;"></span><span class="text">In Arbeit</span>
+                <span class="circle" style="background: #aaf6d6;"></span><span class="text">Erledigt</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <script src="js/angular.min.js"></script>   
-    <script src="https://d3js.org/d3.v3.min.js"></script>    
-    <!--script src="js/d3.min.js"></script-->
+    <script src="js/d3.v3.min.js"></script>
     <script src="js/moqod-test.min.js"></script>
   </body>
 </html>
